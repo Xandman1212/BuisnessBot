@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusinessBot with Google Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BusinessBot</h1>
+    </header>
+
+    <main>
+        <!-- Chat Bot Section -->
+        <section id="bot-interface">
+            <h2>Order Bot</h2>
+            <div id="chat-window"></div>
+            <input type="text" id="user-input" placeholder="Ask a question...">
+            <button id="send-button">Send</button>
+        </section>
+
+        <!-- Google Sign-In Section -->
+        <section id="google-login">
+            <h2>Login with Google</h2>
+            <div id="g_id_onload"
+                 data-client_id="170380945132-rrsnussubru3orhg4ssl5gal54ivuoob.apps.googleusercontent.com"
+                 data-context="signin"
+                 data-ux_mode="popup"
+                 data-login_uri="https://xandman1212.github.io/BuisnessBot/google-login"
+                 data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                 data-type="standard"
+                 data-shape="rectangular"
+                 data-theme="outline"
+                 data-text="sign_in_with"
+                 data-size="large"
+                 data-logo_alignment="left">
+            </div>
+        </section>
+    </main>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
